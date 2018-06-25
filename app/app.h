@@ -22,7 +22,7 @@
 extern class RF cRf;                    /* app\tasks\task_startupapp.cpp */
 extern RF_DATA RFData;                  /* app\tasks\task_startupapp.cpp */
 extern DATASET_RF sDataset;             /* app\tasks\task_startupapp.cpp */
-extern DATASET_RF sDatasetEE;               /* app\tasks\task_startupapp.cpp */
+extern DATASET_RF sDatasetEE;           /* app\tasks\task_startupapp.cpp */
 
 /************************************************************************/
 /* TASK PROTOTYPES                                                      */
