@@ -39,11 +39,11 @@ enum ERROR_enum {
 union DATASET_RF {
     uint8_t reg[16];
     struct {
-        uint8_t					unRFChannel;				/* RF channel number													*/
-        uint8_t					aTransmitAddress[5];		/* Slave address														*/
-        uint8_t					unRFBaud;					/* RF Baud rate (250kbps, 1Mbps, 2Mbps)									*/
-        uint32_t				unAppChecksum;				/* Application sector checksum											*/
-        uint8_t					aReserved[5];				/* Reserved bytes for future use										*/
+        uint8_t                 unRFChannel;                /* RF channel number                                                    */
+        uint8_t                 aTransmitAddress[5];        /* Slave address                                                        */
+        uint8_t                 unRFBaud;                   /* RF Baud rate (250kbps, 1Mbps, 2Mbps)                                 */
+        uint32_t                unAppChecksum;              /* Application sector checksum                                          */
+        uint8_t                 aReserved[5];               /* Reserved bytes for future use                                        */
     };
 };
 
@@ -84,8 +84,8 @@ union RF_DATA {
              *=======================================================================*/
             union 
             {
-                DATASET_RF				SetDataset;
-                uint16_t				unFlashAddress;
+                DATASET_RF              SetDataset;
+                uint16_t                unFlashAddress;
             } Master;
             
             /*===== SLAVE DATA ======================================================
@@ -93,9 +93,9 @@ union RF_DATA {
              *=======================================================================*/
             union 
             {
-                ERROR_enum				    eError;
+                ERROR_enum                  eError;
                 struct STATUS_BOOT_struct   {DEVICE_TYPE_enum eDeviceType; uint16_t unFlashPageSize;}sStatusBoot;
-                DATASET_RF				    GetDataset;
+                DATASET_RF                  GetDataset;
             } Slave;
         };
     };

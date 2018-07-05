@@ -15,10 +15,10 @@
 DATASET_RF sDataset;
 DATASET_RF sDatasetEE EEMEM = {
     /* Default EEPROM Dataset Values ---------------------------------------*/
-    125,						/* RF channel number                        */
-    0xAA,0x55,0xAA,0x55,0xAA,	/* Slave address                            */
-    RF_BAUD_250kbps_gc,			/* RF Baud rate (250kbps, 1Mbps, 2Mbps)     */
-    0x00000000					/* CRC application sector checksum          */
+    125,                        /* RF channel number                        */
+    0xAA,0x55,0xAA,0x55,0xAA,   /* Slave address                            */
+    RF_BAUD_250kbps_gc,         /* RF Baud rate (250kbps, 1Mbps, 2Mbps)     */
+    0x00000000                  /* CRC application sector checksum          */
 };
 RF cRf;
 RF_DATA RFData;
